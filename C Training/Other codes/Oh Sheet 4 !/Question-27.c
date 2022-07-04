@@ -1,29 +1,33 @@
 # include <stdio.h>
 # include <string.h>
-# include <windows.h> // wrong
+# include <windows.h>
 
 // Program to take the character after spaces from the string.
 
 int main()
 {
     char str[50];
-    char store[4];
-    int i, l;
+    char store[10];
+    int i, l, k;
 
     printf("Enter the string: ");
     gets(str);
 
+    store[0] = str[0];
+
     l = strlen(str);
     store[0] = str[0];
 
-    for(i = 1; i < l; i++)
+    for(i = 1, k = 1; i < l; i++)
     {
         if(str[i] == ' ')
-            store[i] = str[i + 1];
+        {
+            store[k] = str[i + 1];
+            k++;
+        }
     }
 
-    printf(store);
-    
+    puts(store);
 
     return 0;
 }
