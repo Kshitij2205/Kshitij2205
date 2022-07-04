@@ -27,7 +27,7 @@ int main()
         }
     }
 
-    puts(store);
+    printf("%s", strupr(store));
 
     return 0;
 }
