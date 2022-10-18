@@ -39,7 +39,7 @@ int main()
     printf("6. Binary to Hexadeciaml\n\n");
 
     printf("4. Octal to Decimal\t");
-    printf("8. Hexadecimal to Decimal\n");
+    printf("7. Hexadecimal to Decimal\n");
 
     printf("Choose a number from range 1 - 6 to perform any function: ");
     scanf("%d", &number);
