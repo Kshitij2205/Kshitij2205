@@ -1,0 +1,39 @@
+// Implement the previous question using other type of loops
+
+#include <stdio.h>
+
+int main()
+{
+    int num, i;
+
+    printf("Enter the number: ");
+    scanf("%d", &num);
+
+    i = 4;
+
+    if (num < i)
+        printf("%d is an exceptional number", num);
+
+    else
+    {
+        do
+        {
+            if(num % i == 0)
+            {
+                printf("%d is not a prime number", num);
+                break;
+            }
+
+            if (i == (num - 1))
+            {
+                printf("%d is a prime number", num);
+                break;
+            }
+
+            i++;
+
+        } while (i < num);
+    }
+
+    return 0;
+}

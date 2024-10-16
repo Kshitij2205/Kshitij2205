@@ -1,0 +1,27 @@
+// Write a function sumvector which retruns the sum of two vectors passed to it. The vectors must be two-dimensional.
+
+// can't understand... 
+
+#include <stdio.h>
+
+int sumvector (struct student s1)
+{
+    return s1.num;
+}
+
+struct student
+{
+    int num;
+};
+
+int main()
+{
+    struct student s1, s2;
+
+    s1.num = 4;
+    s2.num = 5;
+
+    printf("The sum of the two vectors is %d\n", sumvector(s1, s2));       
+
+    return 0;
+}

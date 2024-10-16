@@ -1,0 +1,19 @@
+// What will the following line produce in a program:
+// printf("%d %d %d\n", a, ++a, a++);
+
+// Answer: (wrong)
+
+// Let's say a = 5; then the line will print-
+// 5, 6, 6
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 5;
+
+    printf("%d %d %d\n", a, ++a, a++);
+
+    return 0;
+}
