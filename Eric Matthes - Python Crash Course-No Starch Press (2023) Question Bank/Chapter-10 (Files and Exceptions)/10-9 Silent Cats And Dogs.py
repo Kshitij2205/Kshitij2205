@@ -1,0 +1,1 @@
+# Modify your except block in Exercise 10-7 to fail silently if either file is missing.
